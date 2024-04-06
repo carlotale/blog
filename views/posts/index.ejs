@@ -11,7 +11,7 @@
         <% for (let post of posts) { %>
         <tr>
             <td><h3><li><%= post.title %></li></h3></td> 
-            <td><img src="/posts/<%= post.id %>/attachment" class="attachment"/></td>
+            <td><% include ../attachments/attachment %></td>
             <td>
                 <a href="/posts/<%= post.id %>" class="button">Mostrar</a>
             </td>
