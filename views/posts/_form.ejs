@@ -1,0 +1,18 @@
+<form action="/posts/<%= post.id %>" method="POST" enctype="multipart/form-data">
+    <div class="wideRow">
+        <label for="title" class="itemNarrow">Título:</label>
+        <input type="text" class="itemWide" id="title" name="title" value="<%= post.title %>" autocomplete="off"/>
+    </div>
+    <div class="wideRow">
+        <label for="body" class="itemNarrow">Cuerpo:</label>
+        <input type="text" class="itemWide" id="body" name="body" value="<%= post.body %>" autocomplete="off"/>
+    </div>
+    <div>
+        <label for="img">Inserta imagen (Max tamaño 2MB):</label>
+        <input type="file" id="img" name="image"/>
+    </div>
+    <br/>
+    <a href="/posts" class="button">Cancelar</a>
+    
+    <input type="submit" value="Save" class="button">
+</form>

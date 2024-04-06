@@ -1,0 +1,38 @@
+#page:after {
+    content: "Wide Layout";
+}
+
+body {
+    --primary: #333;
+    --secondary: #dfd88d;
+    background: white;
+    color: var(--primary);
+} 
+  
+#mainHeader {
+    background-color: #999999;
+    text-align: center;
+    color: #1e00ff; 
+    padding: 150px;
+}
+  
+#mainSection {
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+}
+  
+#mainNav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    text-decoration: underline;
+    display: inline-block;
+}
+  
+#mainFooter {
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 1px solid #333;
+    text-align: right;
+} 
