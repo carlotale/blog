@@ -23,7 +23,7 @@ router.get('/posts/new', postsController.new);
 router.post('/posts', upload.single('image'), postsController.create);
 router.get('/posts/:postId(\\d+)/edit', postsController.edit);
 router.put('/posts/:postId(\\d+)', upload.single('image'), postsController.update);
-router.delete('/posts/:postId(\\d+)', postsController.destroy);
+router.delete('/posts/:postId(\\d+)', postsController.destroy)
 
 
 module.exports = router;
